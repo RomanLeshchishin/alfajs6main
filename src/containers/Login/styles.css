@@ -1,0 +1,104 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+/*.bodyClass{
+  background: url('../Img/LoginBackground.png');
+  background-size: cover;
+}*/
+
+.loginbox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 430px;
+  height: 650px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border-radius: 40px;
+  gap: 80px;
+  background: #FFFFFF;
+}
+
+.login{
+  padding-bottom: 15px;
+}
+
+.login input{
+	width: 330px;
+  height: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-indent: 10px;
+	background: #FFFFFF;
+	border: 1px solid #A4A4A4;
+	border-radius: 100px;
+}
+
+.textStyle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  left: 10px;
+  line-height: 19px;
+}
+
+.bigLogin{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.loginText{
+  /* font-weight: bold; */
+  color: #2c2c2c;
+}
+
+.forgotPass{
+  text-decoration-line: underline;
+  text-decoration-color: #A4A4A4;
+}
+
+.forgot-password a{
+  text-decoration-line: none;
+}
+
+.parentText{
+  color: #FFFFFF;
+}
+
+.employeeText{
+  color: #000000;
+}
+
+.password{
+  padding-bottom: 5px;
+}
+
+.login-action{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 47px;
+}
+
+.login-action a{
+  width: 250px;
+  height: 53px;
+  left: 834px;
+  top: 661px;
+  background: #FF3838;
+  border-radius: 1000px;
+  border: 1px #FF3838;
+  text-decoration-line: none;
+}
+
+.employee a{
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}

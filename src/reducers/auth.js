@@ -5,29 +5,18 @@ import {
     USER_LOADED_FAIL,
     AUTHENTICATED_SUCCESS,
     AUTHENTICATED_FAIL,
-    /*PASSWORD_RESET_SUCCESS,
-    PASSWORD_RESET_FAIL,
-    PASSWORD_RESET_CONFIRM_SUCCESS,
-    PASSWORD_RESET_CONFIRM_FAIL,
-    SIGNUP_SUCCESS,
-    SIGNUP_FAIL,*/
     ACTIVATION_SUCCESS,
     ACTIVATION_FAIL,
-    /*GOOGLE_AUTH_SUCCESS,
-    GOOGLE_AUTH_FAIL,
-    FACEBOOK_AUTH_SUCCESS,
-    FACEBOOK_AUTH_FAIL,*/
     ORDER_LOADED_SUCCESS,
     ORDER_LOADED_FAIL,
     LOGOUT
 } from '../actions/types';
+import { Navigate } from 'react-router-dom';
 
 const initialState = {
     access: localStorage.getItem('token'),
-    refresh: localStorage.getItem('refresh'),
     isAuthenticated: false,
     user: null,
-    orders: null,
 };
 
 export default function(state = initialState, action) {
@@ -37,36 +26,24 @@ export default function(state = initialState, action) {
         case AUTHENTICATED_SUCCESS:
             return {
                 ...state,
-                isAuthenticated: true
+                isAuthenticated: false
             }
         case LOGIN_SUCCESS:
-            //localStorage.setItem('orders', payload)
             localStorage.setItem('first_name', payload.user.first_name)
             localStorage.setItem('last_name', payload.user.last_name)
             localStorage.setItem('middle_name', payload.user.profile.middle_name)
-            localStorage.setItem('balance', payload.user.profile.balance)
-            localStorage.setItem('token', payload.token);
-            localStorage.setItem('refresh', payload.refresh);
+            localStorage.setItem('token', payload.token)
+            localStorage.setItem('groups', payload.user.groups.map(role => role)[0])
             return {
                 ...state,
                 isAuthenticated: true,
                 access: payload.access,
-                refresh: payload.refresh
             }
         case USER_LOADED_SUCCESS:
             return {
                 ...state,
-                user: payload
-            }
-        case ORDER_LOADED_SUCCESS:
-            return {
-                ...state,
-                orders: payload
-            }
-        case ORDER_LOADED_FAIL:
-            return{
-                ...state,
-                orders: null
+                user: payload,
+                isAuthenticated: false,
             }
         case AUTHENTICATED_FAIL:
             return {
@@ -81,11 +58,9 @@ export default function(state = initialState, action) {
         case LOGIN_FAIL:
         case LOGOUT:
             localStorage.removeItem('token');
-            localStorage.removeItem('refresh');
             return {
                 ...state,
                 access: null,
-                refresh: null,
                 isAuthenticated: false,
                 user: null
             }

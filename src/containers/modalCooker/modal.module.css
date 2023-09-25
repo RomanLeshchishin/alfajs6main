@@ -1,0 +1,112 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.active{
+    transform: scale(1);
+}
+
+.modalContent{
+    box-sizing: border-box;
+    width: 1010px;
+    height: 747px;
+    background: #FFFFFF;
+    border: 1px solid #DCD6D6;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    gap: 39px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.blockInput{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 25px;
+    width: 444px;
+    height: 624.28px;
+}
+
+.blockImage{
+    display: flex;
+    border: 2px solid #DCD6D6;
+    border-radius: 20px;
+    width: 437px;
+    height: 314.28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 10px 10px 17px;
+    gap: 14px;
+    width: 444px;
+    height: 48px;
+    border: 2px solid #DCD6D6;
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.big{
+    padding: 10px 20px;
+    height: 255px;
+    resize: none;
+    order: 4;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 35px;
+    gap: 10px;
+    width: 242px;
+    height: 54px;
+    background: #FF3838;
+    border-radius: 1000px;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loadImg{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.imageSize{
+    width: 415px;
+    height: 282.28px;
+}
+

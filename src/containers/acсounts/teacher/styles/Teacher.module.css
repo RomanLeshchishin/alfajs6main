@@ -1,0 +1,423 @@
+/* Common specifications */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1380px;
+    height: 120px;
+    background: #ffffff;
+    margin: 0 auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerMenuElementPicture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 13.22px;
+    transform: translate(0, -50%);
+    margin-top: 10px;
+    width: 200px;
+}
+
+.headerMenuElement {
+    list-style-type: none;
+    text-decoration-line: none;
+    color: #000000;
+
+    width: 178px;
+    height: 24px;
+
+    font-family: 'Inter', sans-serif, normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 110px;
+    margin: 30px;
+    list-style-type: none;
+}
+
+.classCheckButton {
+    margin-right: 430px;
+}
+
+/* Personal information block */
+
+.personalInformation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 50px;
+    gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background: #FFFFFF;
+
+    border: 2px solid #DCD6D6;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.personalInformationBlock {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Date */
+
+.dateBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 50px;
+    margin-top: 30px;
+    gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background: #FFFFFF;
+
+    border: 2px solid #DCD6D6;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.dateBlockInformation {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #696969;
+}
+
+.dateBlockInformationNumber {
+
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FF3838;
+}
+
+/* Class block */
+
+.classBlock {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 50px;
+    gap: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 1000px;
+    background: #FFFFFF;
+
+    border: 2px solid #DCD6D6;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.classBlockInformation {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #696969;
+}
+
+.classBlockInformationNumber {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+/* Students list */
+
+.studentsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 50px;
+    gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    width: 1000px;
+    height: 610px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #DCD6D6;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.studentsListSearch {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 30px;
+    gap: 10px;
+
+    width: 321px;
+    height: 54px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #A4A4A4;
+    border-radius: 1000px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.studentsListSearchText {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #A4A4A4;
+}
+
+.formGroupTitle {
+	font-style: 22px;
+	font-weight: 700;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    margin-left: 50px;
+    
+}
+
+.formGroup + .formGroup {
+	margin-top: 10px;
+}
+
+label {
+	cursor: pointer;
+}
+
+/* *********************************
+Чекбоксы
+********************************* */
+.studentListCheckboxes {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.realCheckbox {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.realCheckbox:focus + .custom-checkbox {
+	box-shadow: 0px 0px 0px 1px #38577a, 0px 0px 10px #7e9bbd;
+
+}
+
+.customCheckbox {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: #FF0000;
+	border: 3px solid #FF0000;
+	border-radius: 1000px;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+
+.customCheckbox::before {
+	content: '';
+
+	/* Рисуем галочку */
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-image: url('../../Img/check.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	/* Выравниваем по центру */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	margin-top: 1px;
+
+	transition: 0.2s ease-in;
+}
+
+/*
+Активируем фейковый / декоративный чекбокс
+*/
+
+.realCheckbox:checked + .customCheckbox::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+/* Error form */
+
+.errorFeedbackForm {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 50px;
+    gap: 10px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+
+    width: 1000px;
+    height: 84px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #DCD6D6;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.errorFeedbackFormInformation {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #696969;
+    
+}
+
+/* Accept button */
+
+.acceptButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 40px;
+    gap: 10px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 210px;
+    height: 54px;
+
+    /* red_button */
+
+    background: red;
+    border-radius: 1000px;
+
+    border: none;
+}
+
+.acceptButtonInformation {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}

@@ -5,10 +5,16 @@
 
 body {
     background: none;
-    font-family: "Inter";
+    font-family: 'Inter', sans-serif;
     background-color: #FFF;
     margin: 0 auto;
 }
+
+button{
+    border: none;
+    background: none; 
+}
+
 /* Header */
 header {
     position: relative;
@@ -20,7 +26,7 @@ header {
     margin: 0 auto;
 }
 
-.logo-header {
+.logoHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,16 +37,16 @@ header {
     transform: translate(0, -50%)
 }
 
-.header-parent {
+.headerParent {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 110px;
+    gap: 109px;
     margin: 30px;
 }
 
-.header-main {
+.headerMain {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,19 +55,35 @@ header {
     margin: auto;
 }
 
-.header-link {
+.headerLink {
+    display: flex;
     text-decoration-line: none;
-    color: #000000;
-
+    color: black;
     width: 178px;
     height: 24px;
-
+    flex-direction: row;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+}
+
+.link {
+    width: 194px;
+    height: 24px;
+}
+
+.headerAccount {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.linkAccount {
+    width: 122px;
+    height: 24px;
 }
 
 /* Main content */
@@ -71,7 +93,7 @@ ul {
 }
 
 /* Personal information block */
-.container-name {
+.containerName {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -100,7 +122,7 @@ ul {
     margin-top: 60px;
 }
 
-.smaller-container {
+.smallerContainer {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -149,7 +171,7 @@ ul {
     flex-grow: 0;
 }
 
-.username-login{
+.usernameLogin{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -193,7 +215,8 @@ ul {
 .arrow {
     padding-top: 15px;
 }
-.fio-money {
+
+.fioMoney {
     padding-top: 10px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -206,7 +229,7 @@ ul {
     padding-left: 30px;
 }
 
-.fio-balance {
+.fioBalance {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -230,7 +253,7 @@ ul {
     padding-right: 50px;
 }
 
-.gray-text {
+.grayText {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -239,15 +262,17 @@ ul {
     color: #A4A4A4;
 }
 
-.button-red-products{
+.selector{
+    border-radius: 1000px;
+}
+
+.buttonRedProducts{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 15px 40px;
     gap: 10px;
     text-align: center;
-
-    width: 210px;
     height: 54px;
 
     /* red_button */
@@ -275,6 +300,8 @@ ul {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #000000;
 }
 
@@ -369,7 +396,7 @@ ul {
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 16px;
 }
 
 .money {
@@ -379,7 +406,7 @@ ul {
 
 /* Buttons */
 
-.button-red {
+.buttonRed {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -392,7 +419,7 @@ ul {
 
     /* red_button */
 
-    background: #FF3838;
+    background: red;
     border-radius: 1000px;
     outline: none !important;
     border: 0 !important;
@@ -409,7 +436,7 @@ ul {
     margin-right: 30px;
 }
 
-.button-gray {
+.buttonGray {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -439,7 +466,7 @@ ul {
     margin-bottom: 50px;
 }
 
-.button-text {
+.buttonText {
     width: 130px;
     height: 24px;
 
@@ -462,7 +489,7 @@ ul {
     font-family: 'Inter';
 }
 
-.button-section {
+.buttonSection {
     display: flex;
 }
 
@@ -488,16 +515,15 @@ ul {
     box-sizing: border-box;
 }
 
-.card-img {
-    width: 215px;
+.cardImg {
+    width: 240px;
     height: 200px;
     padding-top: 25px;
     padding-left: 25px;
-    padding-right: 25px;
     padding-bottom: 0;
 }
 
-.card-price {
+.cardPrice {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -507,7 +533,7 @@ ul {
     margin-left: 25px;
 }
 
-.card-title {
+.cardTitle {
     margin-top: 10px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -517,7 +543,7 @@ ul {
     margin-left: 25px;
 }
 
-.card-gramm {
+.cardGramm {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -530,7 +556,7 @@ ul {
     margin-left: 25px;
 }
 
-.btn-keeper {
+.btnKeeper {
     margin-top: 20px;
     margin-left: 25px;
     margin-bottom: 40px;
@@ -543,6 +569,5 @@ ul {
     text-decoration: none;
     color: #FFFFFF;
     border-radius: 1000px;
-    font-family: "Inter", sans-serif;
-    
+    font-family: "Inter", sans-serif;  
 }
